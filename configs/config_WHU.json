@@ -1,0 +1,78 @@
+{
+    "name": "SemiCD-WHU-CD",
+    "percent":5,
+    "experim_name": "method_percent",
+    "n_gpu": 1,
+    "diff_lrs": true,
+    "ramp_up": 0.1,
+    "lr_scheduler": "Poly",
+    "pretrained": true,
+
+    "model":{
+        "method": "FPA",
+        "backbone": "ResNet50",
+        "confidence_thr": 0.95
+        },
+
+    "optimizer": {
+        "type": "SGD",
+        "args":{
+            "lr": 1e-2,
+            "weight_decay": 1e-4,
+            "momentum": 0.9
+        }
+    },
+
+    "train_supervised": {
+        "data_dir": "../data/WHU-CD-256",
+        "batch_size": 8,
+        "crop_size": 256,
+        "shuffle": true,
+        "base_size": 256,
+        "scale": true,
+        "augment": "weak",
+        "flip": true,
+        "rotate": true,
+        "split": "train_supervised",
+        "num_workers": 1
+    },
+
+    "train_unsupervised": {
+        "data_dir": "../data/WHU-CD-256",
+        "batch_size": 8,
+        "crop_size": 256,
+        "shuffle": true,
+        "base_size": 256,
+        "scale": true,
+        "augment": "strong",
+        "flip": true,
+        "rotate": true,
+        "split": "train_unsupervised",
+        "num_workers": 1
+    },
+
+    "val_loader": {
+        "data_dir": "../data/WHU-CD-256",
+        "batch_size": 1,
+        "val": true,
+        "split": "val",
+        "shuffle": false,
+        "num_workers": 1
+    },
+
+    "trainer": {
+        "epochs": 80,
+        "save_dir": "./saved/WHU-CD/backbone",
+        "save_period": 5,
+  
+        "monitor": "max Mean_IoU",
+        "early_stop": 10,
+        
+        "tensorboardX": true,
+        "log_dir": "./saved/WHU-CD/backbone",
+        "log_per_iter": 20,
+
+        "val": true,
+        "val_per_epochs": 5
+    }
+}
