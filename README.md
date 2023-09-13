@@ -12,4 +12,5 @@ hrnetv2_w48_imagenet_pretrained.pth
 Acknowledgements
 
 This code is based on "https://github.com/wgcban/SemiCD/tree/mainhttps://github.com/wgcban/SemiCD/tree/main"
+
 Code structure was based on Pytorch-TemplateResNet backbone was downloaded from torchcv
