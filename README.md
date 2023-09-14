@@ -1,7 +1,7 @@
 # FPA-SSCD
 This is the code of X. Zhang, H. Huang, and J. Li, “Semi-Supervised Change Detection with Feature-Prediction Alignment,” IEEE Transactions on Geoscience and Remote Sensing (T-GRS), vol. 61, pp. 1–16, 2023.
 
-Please download and rename three ".pth" files 
+Please download three ".pth" files 
 
 "3x3resnet50-imagenet.pth"
 
