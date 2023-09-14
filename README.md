@@ -1,5 +1,5 @@
 # FPA
-This is the code of X. Zhang, H. Huang, and J. Li, “Semi-Supervised Change Detection with Feature-Prediction Alignment,” IEEE Transactions on Geoscience and Remote Sensing (T-GRS), 2023.
+This is the code of X. Zhang, H. Huang, and J. Li, “Semi-Supervised Change Detection with Feature-Prediction Alignment,” IEEE Transactions on Geoscience and Remote Sensing (T-GRS), vol. 61, pp. 1–16, 2023.
 
 Please download three ".pth" files from "https://github.com/donnyyou/torchcv" to the folder "FPA-SSCD/models/backbone/pretrained". They are
 
