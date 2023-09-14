@@ -9,7 +9,7 @@ Please download and rename three ".pth" files
 
 "hrnetv2_w48_imagenet_pretrained.pth"
 
-from the following three links
+from the following three links (or you can also find these three ".pth" files by yourself)
 
 "https://github.com/yassouali/CCT/releases/download/v0.1/3x3resnet50-imagenet.pth" 
 
